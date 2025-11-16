@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Linking external JavaScript file with defer attribute where script
+     will be executed after the HTML is completely parsed.-->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Smoothie Order Form</h1>
+    </header>
+    <main>
+        <!--Name for the order-->
+        <form id="smoothieForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <!--Type for the Smoothie-->
+            <label for="smoothieType">Choose a smoothie:</label>
+            <select id="smoothieType" name="smoothieType" required> 
+                <option value="">--Please choose an option--</option>
+                <option value="berryBlast">Berry Blast</option>
+                <option value="tropicalTwist">Tropical Twist</option>
+                <option value="greenGoodness">Green Goodness</option>
+            </select>
+            <br>
+            <!--Size of the Smoothie-->
+            <label for="size">Size:</label>
+            <select id="size" name="size" required>
+                <option value="">--Please choose a size--</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <br>
+             <!-- Protein Add-on -->
+            <label for="protein">Protein Add-on (optional):</label>
+            <select id="protein" name="protein">
+            <option value="">--Please choose an option--</option>
+                <option value="whey">Whey Protein</option>
+                <option value="plantBased">Plant-Based Protein</option>
+                </select>
+            <br>
+            <button type="submit">Submit Order</button>           
+        </form>
+        <div id="output"></div>
+    </main>
+</html>
+
